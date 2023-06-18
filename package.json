@@ -4,20 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx http-server ./"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/acho087/acho087.github.io.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/acho087/acho087.github.io/issues"
-  },
-  "homepage": "https://github.com/acho087/acho087.github.io#readme",
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "http-server": "^14.1.1"
   }
 }
