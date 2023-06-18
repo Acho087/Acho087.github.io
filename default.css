@@ -65,20 +65,20 @@ h6 { font-size: 16px;}
     display: grid;
     text-align: center;
     align-content: center;
-    border: 2px dashed lightcoral;
     min-height: 10em;
 }
 
 .intro-wrapper{
     background-color: var(--secondaryColor);
     border:1px solid var(--borderColor);
+    border-radius: 5px 5px 0 0;
 
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 
     display: grid;
-    grid-template-rows: 3em 20em auto;
+    /* grid-template-rows: 3em 20em auto; */
     grid-template-columns: auto;
     grid-template-areas: 
     'nav-wrapper'
@@ -88,17 +88,94 @@ h6 { font-size: 16px;}
 }
 
 .nav-wrapper{
-    border: 1px dashed lightcoral;
+
     grid-area: nav-wrapper;
+    border-bottom: 1px solid var(--borderColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mainColor);
+    border-radius: 5px 5px 0 0;
 }
 
+.navigation{
+    padding: 10px;
+    display: flex;
+}
+
+
+.dots-wrapper{
+    display: flex;
+    padding: 10px;
+
+}
+
+.browser-dot{
+    background-color: #171717;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    margin: 5px;
+}
+#dot-1{
+    background-color: #EB6C5D;
+}
+#dot-2{
+    background-color: #F7BD52;
+}
+#dot-3{
+    background-color: #63C258;
+}
+
+
 .about{
-    border: 1px dashed lightcoral;
+    border-right: 1px solid black;
     grid-area: about;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+#profile-pic{
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border: 5px solid var(--borderColor);
+    border-radius: 50%!important
+}
+
+#social-media{
+display: flex;
+justify-content: center;
+}
+
+.dot-sm{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #171717;
+    margin: 5px;
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.icon-size{
+    width: 20px;
+    height: 20px;
 }
 
 .main{
-    border: 1px dashed lightcoral;
+    /* border: 1px dashed lightcoral; */
     grid-area: main;
 }
 

@@ -1,40 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
+    rel="stylesheet">
 
- <link rel="stylesheet" type="text/css" href="default.css">
+  <link rel="stylesheet" type="text/css" href="default.css">
   <title>My Portfolio website</title>
 
 
 </head>
+
 <body>
   <section class="s1">
     <div class="main-container">
       <div class="greeting-wrapper">
-      <h1>Hi, <br> I'm Adam Cho</h1>
-      <span>Mechanical Engineer</span>
+        <h1>Hi, <br> I'm Adam Cho</h1>
+        <span>Mechanical Engineer</span>
       </div>
       <div class="intro-wrapper">
         <div class="nav-wrapper">
-          Nav
+          <div class="dots-wrapper">
+            <div id="dot-1" class="browser-dot"></div>
+            <div id="dot-2" class="browser-dot"></div>
+            <div id="dot-3" class="browser-dot"></div>
+          </div>
+          <div class="navigation">
+            <div><a href="#">Somewhere</a></div>
+          </div>
         </div>
-        <div class="about">
-          About
-        </div>
+        <section class="about">
+          <img id="profile-pic" src="images/profile-pic.jpg">
+          <h5>Contact Me</h5>
+
+          <div id="social-media">
+            <a href="#" class="dot-sm"> <img src="images/icon-linkedin.svg" class="icon-size"></a>
+            <a href="#" class="dot-sm"> <img src="images/icon-github.svg" class="icon-size"></a>
+            <a href="#" class="dot-sm"> <img src="images/icon-whatsapp.svg" class="icon-size"></a>
+            <a href="#" class="dot-sm"> <img src="images/icon-share.svg" class="icon-size"></a>
+            
+          </div>
+
+        </section>
         <div class="main">
           main
+          <h2>
+            Hi
+          </h2>
         </div>
 
       </div>
-      
+
     </div>
-      
+
   </section>
 
   <section class="s2">
@@ -55,4 +78,5 @@
     console.log("Hello, JavaScript!");
   </script>
 </body>
+
 </html>
