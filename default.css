@@ -152,7 +152,6 @@ h6 {
 }
 
 .about {
-
   border-bottom: 1px solid black;
   border-right: none;
   grid-area: about;
@@ -222,10 +221,26 @@ h6 {
   grid-template-areas: "grid1 grid2";
 }
 
-.Apps {
+.appcontainer {
+  border: 1px dashed blue;
   grid-area: grid2;
   text-align: center;
   border-left: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  background-color: grey;
+  border: 1px #63c258;
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .grid1 {
@@ -233,13 +248,13 @@ h6 {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "skills" "portfolio";
-
 }
 
 .skills {
-  padding: 20px;
+  padding: 10px;
   grid-area: skills;
   border-bottom: 1px solid black;
+  align-items: center;
 }
 
 .portfolio {
@@ -247,31 +262,23 @@ h6 {
   grid-area: portfolio;
 }
 
-.skillscontainer{
-    height: 100px;
-    display: flex;
-    flex-wrap: wrap;
+.skillscontainer {
+    border: 1px dashed red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .box {
   justify-content: center;
   align-items: center;
   background-color: blue;
-text-align: center;
-margin: 5px;
+  text-align: center;
+  margin: 5px;
   height: 40px;
   width: 40px;
 
   display: flex;
-  
-}
-
-.app {
-  background-color: grey;
-  border: 1px #63c258;
-  margin: 2px;
-  height: 100px;
-  width: 100px;
 }
 
 .bottom {
@@ -287,8 +294,8 @@ margin: 5px;
 }
 
 @media screen and (min-width: 700px) {
-    .about {
-        border-right: 1px solid black;
+  .about {
+    border-right: 1px solid black;
   }
   .intro-wrapper {
     grid-template-columns: 1fr 2fr;
@@ -296,8 +303,8 @@ margin: 5px;
       "nav-wrapper nav-wrapper"
       "about main";
   }
-  .box{
-    height: 65px;
-    width: 65px;
+  .box {
+    height: 70px;
+    width: 70px;
   }
 }
