@@ -93,6 +93,9 @@ h6 {
   align-content: center;
   min-height: 10em;
 }
+.auto-type{
+  font-size:small;
+}
 
 .intro-wrapper {
   background-color: var(--secondaryColor);

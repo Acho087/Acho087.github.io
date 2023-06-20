@@ -9,9 +9,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
     rel="stylesheet">
+  
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
   <link rel="stylesheet" type="text/css" href="default.css">
-  <title>Adam Cho's Website</title>
+  <title>Adam Cho's Profile</title>
 
 
 </head>
@@ -22,7 +24,7 @@
       <div class="greeting-wrapper">
         <h1>Hi, I'm Adam Cho</h1>
         <div>
-          <span>Mechanical Engineer</span>
+          <span class="auto-type"></span>
         </div>
       </div>
 
@@ -52,10 +54,7 @@
               About Me
             </h5>
             <p style=" margin: 0 auto; max-width: 500px;">
-              Dynamic, multi-skilled professional Mechanical Design Engineer with expertise in software and electronics.
-              Thrives in dynamic environments, applying diverse knowledge to drive impactful outcomes. Enjoys traveling,
-              playing sports, and has a passion for continuous learning. Brings a unique blend of skills and a dynamic
-              approach to all endeavors. </p>
+              Kia ora! I'm a skilled Mechanical Design Engineer with a flair for software and electronics, currently situated in the UK. I thrive in dynamic environments, utilizing my diverse knowledge to achieve significant outcomes. I enjoy traveling, engaging in sports, and have a genuine passion for continuous learning. I bring an innovative dynamic approach to all my endeavors. </p>
           </div>
 
 
@@ -79,6 +78,16 @@
   <script>
     // JavaScript code can be placed here
     console.log("Hello, JavaScript!");
+  </script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: ["Mechanical Designer", "Digital Enthusiast", "World Traveller"],
+      typeSpeed:40,
+      backSpeed:75,
+      loop: true
+    })
   </script>
 </body>
 
