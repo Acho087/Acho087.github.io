@@ -18,6 +18,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background-color: var(--mainColor);
 }
 
 h1,
@@ -96,7 +97,7 @@ h6 {
 .intro-wrapper {
   background-color: var(--secondaryColor);
   border: 1px solid var(--borderColor);
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px;
 
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
@@ -152,11 +153,10 @@ h6 {
 }
 
 .about {
-  border-bottom: 1px solid black;
   border-right: none;
   grid-area: about;
   text-align: center;
-  padding: 20px;
+  padding: 20px 20px 55px;
   box-sizing: border-box;
 }
 
@@ -225,7 +225,6 @@ h6 {
   border: 1px dashed blue;
   grid-area: grid2;
   text-align: center;
-  border-left: 1px solid black;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -294,15 +293,6 @@ h6 {
 }
 
 @media screen and (min-width: 700px) {
-  .about {
-    border-right: 1px solid black;
-  }
-  .intro-wrapper {
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-      "nav-wrapper nav-wrapper"
-      "about main";
-  }
   .box {
     height: 70px;
     width: 70px;
