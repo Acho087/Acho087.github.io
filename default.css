@@ -33,6 +33,7 @@ strong {
   color: var(--mainText);
   font-family: "Russo One", sans-serif;
   font-weight: 400;
+  margin-top: 0; Add this line to remove the top margin
 }
 
 a,
@@ -90,7 +91,7 @@ h6 {
   display: grid;
   text-align: center;
   align-content: center;
-  min-height: 10em;
+  min-height: 9em;
 }
 .auto-type{
   font-size:small;
@@ -98,10 +99,12 @@ h6 {
 }
 
 .toggles{
-  justify-content:right;
+  justify-content:flex-end;
   grid-area: toggles;
   display: flex;
   position:absolute;
+  top: 10px;
+  right: 10px;
   /* height: 30px; */
   /* align-items: center; */
     
@@ -324,6 +327,7 @@ h6 {
   justify-content: center;
   align-items: center;
   height:max-content;
+  margin: 0 auto;
 }
 
 .box {
