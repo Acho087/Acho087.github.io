@@ -9,7 +9,6 @@
   --secondardText: red;
 }
 
-
 * {
   padding: 0;
   margin: 0;
@@ -35,7 +34,6 @@ strong {
   font-weight: 400;
 }
 
-a,
 p,
 div,
 li,
@@ -49,6 +47,10 @@ button {
   font-size: 12px;
 }
 
+a {
+  text-decoration: none;
+  color: #171717;
+}
 
 h1 {
   font-size: 40px;
@@ -94,48 +96,19 @@ h6 {
 }
 .auto-type{
   font-size:small;
-  height: 10px;
 }
 
 .toggles{
-  justify-content:right;
+  justify-content: space-between;
   grid-area: toggles;
   display: flex;
-  position:absolute;
-  /* height: 30px; */
-  /* align-items: center; */
     
 }
 
-
-.toggle{
-  height: 20px;
-  width: 40px;
-  background-color: grey;
-  position: relative;
-  border-radius: 20px;
-  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+.tog1{
+  color: #2f4f4f;
 }
 
-.toggle::before{
-  content: "";
-  position: absolute;
-  height: 15px;
-  width: 15px;
-  background: var(--secondaryColor);
-  border-radius: 50%;
-  left: 3px;
-  top: 20%;
-  transform: translateY(-10%);
-  transition: all 0.4s ease-in-out;
-}
-
-.toggle.dark::before{
-  left: calc(100% - 15px - 3px);
-  background-color: black;
-  
-
-}
 .tog2{
   color: grey;
 }
@@ -143,7 +116,7 @@ h6 {
 .intro-wrapper {
   background-color: var(--secondaryColor);
   border: 1px solid var(--borderColor);
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px;
 
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
@@ -199,11 +172,10 @@ h6 {
 }
 
 .about {
-  border-bottom: 1px solid black;
   border-right: none;
   grid-area: about;
   text-align: center;
-  padding: 20px;
+  padding: 20px 20px 55px;
   box-sizing: border-box;
 }
 
@@ -244,15 +216,14 @@ h6 {
 }
 
 .aboutme {
-  padding: 20px 25px;
-  text-align: center;
+  padding: 0px 25px 50px 25px;
+  text-align: justify;
 }
 
 .CV {
   display: inline-block;
   padding: 15px 20px;
   border: none;
-  margin:25px;
   border-radius: 50px;
   background-color: black;
   color: #fff;
@@ -269,18 +240,10 @@ h6 {
   grid-template-areas: "grid1 grid2";
 }
 
-.portfolioBlock{
-  height: 200px;
-  width: 200px;
-  background-color: black;
-  margin: 0 auto;
-
-}
-
 .appcontainer {
+  border: 1px dashed blue;
   grid-area: grid2;
   text-align: center;
-  border-left: 1px solid black;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -288,7 +251,7 @@ h6 {
 }
 
 .app {
-  background-color: var(--mainColor);
+  background-color: grey;
   border: 1px #63c258;
   margin: 10px;
   height: 50px;
@@ -296,7 +259,6 @@ h6 {
   align-items: center;
   justify-content: center;
   display: flex;
-  border-radius: 15px;
 }
 
 .grid1 {
@@ -319,26 +281,23 @@ h6 {
 }
 
 .skillscontainer {
+    border: 1px dashed red;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  height:max-content;
 }
 
 .box {
   justify-content: center;
   align-items: center;
-  background-color: var(--mainColor);
+  background-color: blue;
   text-align: center;
   margin: 5px;
   height: 40px;
   width: 40px;
+
   display: flex;
-  border-radius: 15px;
 }
-
-
 
 .bottom {
   padding: 10px;
@@ -353,15 +312,6 @@ h6 {
 }
 
 @media screen and (min-width: 700px) {
-  .about {
-    border-right: 1px solid black;
-  }
-  .intro-wrapper {
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-      "nav-wrapper nav-wrapper"
-      "about main";
-  }
   .box {
     height: 70px;
     width: 70px;
