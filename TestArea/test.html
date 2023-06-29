@@ -5,17 +5,36 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <div id="openModal">1</div>
+    <div class="skillscontainer">
+        <div class="box">
+          <img class="scaled-image" src="" alt="">
+          <div class="overlay" onclick="openModal(1)">
+            <h2>SolidWorks</h2>
+          </div>
+        </div>
+        
+        <div class="box">
+          <img class="scaled-image" src="" alt="">
+          <div class="overlay" onclick="openModal(2)">
+            <h2>PTC Creo</h2>
+          </div>
+        </div>
+      
+        <!-- Add more boxes as needed -->
+      
+        <dialog class="modalDialog" id="modal">
+          <div>
+            <img class="scaled-image" style="margin: 0 auto;" src="" alt="">
+            <h2></h2>
+            <div class="closeModal" onclick="closeModal()">&times;</div>
+          </div>
+          <div class="modal-content">
+            <p></p>
+          </div>
+        </dialog>
+      </div>
+      
 
-  <dialog id="modal">
-    <div>
-      <h2>Popup Box Modal</h2>
-      <button id="closeModal">&times;</button>
-    </div>
-    <div class="modal-content">
-      <p>This is a simple popup box modal.</p>
-    </div>
-  </dialog>
 
   <script src="script.js"></script>
 </body>

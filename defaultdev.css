@@ -347,7 +347,7 @@ h6 {
   border-radius: 15px;
   /* border: 2px solid var(--trimColor); */
   cursor: pointer;
-
+}
   .scaled-image {
     max-width: 50px;
     max-height: 50px;
@@ -356,8 +356,10 @@ h6 {
     width: 50px;
     background-color: var(--mainBGColor);
     border-radius: 10px;
+    margin: auto;
+    display: block;
   }
-}
+
 
 .box:hover{
     opacity: .8;
@@ -374,7 +376,7 @@ dialog {
   left: 0;
   width: 80%;
   /* height: 80%; */
-  padding: 30px;
+  padding: 10px 30px 30px 30px;
   background-color: rgba(0, 0, 0, 1);
   z-index: 9999;
   border: none;
@@ -409,6 +411,7 @@ dialog:not([open]) {
 #modal p {
   color: #dadada; /* Change the font color of both h2 and p to blue */
   text-align: center;
+  /* margin-top: 20px; */
 }
 
 
