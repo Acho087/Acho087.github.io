@@ -28,7 +28,7 @@
   
     <link rel="icon" type="image/png" href="images/favicon.png">
 
-  <link rel="stylesheet" type="text/css" href="default.css">
+  <link rel="stylesheet" type="text/css" href="defaultdev.css">
 
   <link id="theme" rel="stylesheet" type="text/css" href="">
 
@@ -98,7 +98,18 @@
             <div class="skills">
               <h3>Skills</h3>
               <div class="skillscontainer">
-                <div class="box">1</div>
+                                
+                <div class="box" id="openModal">1</div>
+                <dialog id="modal">
+                  <div>
+                    <h2>Popup Box Modal</h2>
+                    <div id="closeModal">&times;</div>
+                  </div>
+                  <div class="modal-content">
+                    <p>This is a simple popup box modal.</p>
+                  </div>
+                </dialog>
+
                 <div class="box">2</div>
                 <div class="box">3</div>
                 <div class="box">4</div>

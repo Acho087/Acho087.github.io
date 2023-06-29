@@ -1,0 +1,49 @@
+dialog[open] {
+  display: block;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog:not([open]) {
+  display: none;
+}
+
+.modal-header {
+  position: relative;
+  padding: 10px;
+}
+
+#closeModal {
+  position: absolute;
+  top: px;
+  right: 5px;
+  transform: translate(50%, -50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#closeModal:hover {
+  color: black;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#openModal {
+  width: 30px;
+  height: 30px;
+  background-color: #aaa;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#openModal:hover {
+  background-color: #777;
+}
