@@ -345,8 +345,18 @@ h6 {
   width: 60px;
   display: flex;
   border-radius: 15px;
-  border: 2px solid var(--trimColor);
+  /* border: 2px solid var(--trimColor); */
   cursor: pointer;
+
+  .scaled-image {
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: contain;
+    height: 50px;
+    width: 50px;
+    background-color: var(--mainBGColor);
+    border-radius: 10px;
+  }
 }
 
 .box:hover{
@@ -362,16 +372,20 @@ dialog {
   margin: auto;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 50%;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, .8);
+  width: 80%;
+  /* height: 80%; */
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 1);
   z-index: 9999;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 dialog[open] {
   display: absolute;
 }
+
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
@@ -386,11 +400,17 @@ dialog:not([open]) {
 .dialog-content {
   width: 200px;
   height: 200px;
-  background-color: white;
-  padding: 20px;
-  /* border-radius: 5px; */
+  background-color: var(--mainColor);
+  padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+#modal h2,
+#modal p {
+  color: #dadada; /* Change the font color of both h2 and p to blue */
+  text-align: center;
+}
+
 
 .modal-header {
   position: relative;
@@ -410,6 +430,7 @@ dialog:not([open]) {
   color: #aaa;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 30px;
 }
 
 #closeModal:hover {
