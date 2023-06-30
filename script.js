@@ -127,30 +127,3 @@ boxes.forEach(function(box) {
   });
 });
 
-
-// PREVENT IMG TAPPING
-
-    document.addEventListener('touchstart', handleTouchStart, false);
-    document.addEventListener('touchmove', handleTouchMove, false);
-    
-    var startX = null;
-    var startY = null;
-    
-    function handleTouchStart(event) {
-        startX = event.touches[0].pageX;
-        startY = event.touches[0].pageY;
-    }
-    
-    function handleTouchMove(event) {
-        if (startX !== null && startY !== null) {
-            var deltaX = Math.abs(event.touches[0].pageX - startX);
-            var deltaY = Math.abs(event.touches[0].pageY - startY);
-    
-            if (deltaX > 10 || deltaY > 10) {
-                startX = null;
-                startY = null;
-            }
-    
-            event.preventDefault();
-        }
-    }
