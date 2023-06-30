@@ -33,19 +33,19 @@ function openModal(index) {
   } else if (index === 6) {
     image.src = 'images/skills/ansys.png';
     title.textContent = 'ANSYS';
-    content.innerHTML = 'Using Ansys at university, trainined in Insstran and have used Solidworks Static FEA';
+    content.innerHTML = 'Nothing beat verifying informaation first with free body diagrams and simple calculations but if you want more accuracy then FEA is the next best thing after real world testing. Used Ansys at university, trainined in Instran and have used Solidworks Static FEA';
   } else if (index === 7) {
     image.src = 'images/skills/webdev.png';
     title.textContent = 'Webdev';
-    content.innerHTML = 'soemthing about apps and the softwaare i know. HTML CSS JS . this website is programmed entired by myself and all self taught';
+    content.innerHTML = 'Something about apps and the softwaare i know. HTML CSS JS. Including this website is programmed entired by myself and all self taught';
   } else if (index === 8) {
     image.src = 'images/skills/python.svg';
     title.textContent = 'Python';
-    content.innerHTML = 'Used Python and Micro Python. Projects included development of a webapp which allows the users to control a LED to have a competition in red vs blue counts. uPython on testing devices. Python for data analysis and calculations.';
+    content.innerHTML = 'Used Python and Micro Python. Projects included development of a webapp that used FLASK which allows the users to control a LED to have a competition in red vs blue counts. uPython on testing devices. Python for data analysis and calculations.';
   } else if (index === 9) {
     image.src = 'images/skills/raspberry.png';
     title.textContent = 'Electronics';
-    content.innerHTML = 'worked on electronics projects both in work at pfizer and personal. ';
+    content.innerHTML = 'Worked on electronics projects both in work at pfizer and personal. *summary of the projects talked about EvoSense*';
   } else if (index === 10) {
     image.src = 'images/skills/excel.png';
     title.textContent = 'Excel';
@@ -53,15 +53,15 @@ function openModal(index) {
   } else if (index === 11) {
     image.src = 'images/skills/instron.png';
     title.textContent = 'Testing and verifications';
-    content.innerHTML = 'testing and verifications and designined of jibs, fixtures for design verification testing. Includes things with sensors.';
+    content.innerHTML = 'Testing, verifications and designined of jig and fixtures for design verification testing. Includes things with force and displacement sensors. Worked on projects which require..........';
   } else if (index === 12) {
     image.src = 'images/skills/stats.png';
     title.textContent = 'Statistical Analysis';
-    content.innerHTML = 'Analysis of data sets to make informaed decisions and trends. used pythong scripts, excel to do something still patient kin info';
+    content.innerHTML = 'Analysis of data sets to make informaed decisions and trends. used python scripts, excel to do something still patient kin info';
   } else if (index === 13) {
       image.src = 'images/skills/report.png';
       title.textContent = 'Reports, Manuals, SOPs';
-      content.innerHTML = 'talk about what was required at pfizer doing reports, Signage engineering manual for signage design before i left and SOPs for processes at pfizer and setting up templates for previous roles for quoting and job/print organization.';
+      content.innerHTML = '*Talk about what was required at pfizer doing reports, Signage engineering manual for signage design before I left and SOPs for processes at pfizer and setting up templates for previous roles for quoting and job/print organization.*';
   } else if (index === 14) {
     image.src = 'images/skills/3dprint.png';
     title.textContent = '3D Printing';
@@ -69,19 +69,19 @@ function openModal(index) {
   } else if (index === 15) {
     image.src = 'images/skills/3dscan.svg';
     title.textContent = '3D Scanning';
-    content.innerHTML = 'used 3D scanning to reverse engineer components at LEP Engineering platics. utalized Geomagic Design X to turn STL/point cloud files into working paratetric files';
+    content.innerHTML = 'Used 3D scanning to reverse engineer components at LEP Engineering platics. utalized Geomagic Design X to turn STL/point cloud files into working paratetric files';
   } else if (index === 16) {
     image.src = 'images/skills/office.png';
     title.textContent = 'office';
-    content.innerHTML = 'have been bought up on the windows eco system and very familiar with the MS suite including ';
+    content.innerHTML = 'Have been bought up on the windows eco system and very familiar with the MS suite..';
   } else if (index === 17) {
     image.src = 'images/skills/medical.png';
-    title.textContent = 'Excel';
-    content.innerHTML = 'Proficcient in using MS excel. this include advance user experience with VB code.';
+    title.textContent = 'Medical Devices';
+    content.innerHTML = 'Something about medical device experience. ISO standards. Processes. Desing controls. Risk Analysis. ';
   } else if (index === 18) {
     image.src = 'images/skills/signage.png';
-    title.textContent = 'Testing devices and Forces machines';
-    content.innerHTML = 'Creo something something...';
+    title.textContent = 'Signage';
+    content.innerHTML = 'Something about signage experience.';
 }
   modal.showModal()
 }
