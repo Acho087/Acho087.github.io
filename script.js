@@ -3,7 +3,9 @@ const close = document.getElementById('closeModal');
 const image = modal.querySelector('img');
 const title = modal.querySelector('h2');
 const content = modal.querySelector('p');
+var boxes = document.querySelectorAll('.box');
 let isHidden = true;
+var activeBox = null; 
 
 function openModal(index) {
   // Set the image source, title, and content based on the index
@@ -11,7 +13,6 @@ function openModal(index) {
 
   if (index === 1) {
     image.src = 'images/skills/solidworks.png';
-    
     title.textContent = 'SolidWorks';
     content.innerHTML = 'SolidWorks is a powerful 3D computer-aided design (CAD) software that engineers swear by for designing and modeling complex mechanical and industrial systems. Its a game-changer, streamlining the product development process and boosting engineering efficiency. <br> <br>In my journey spanning over four years, Ive had the privilege of diving deep into SolidWorks while working at Pfizer, LEP Engineering Plastics, and MAG Assembly. These experiences have allowed me to hone my skills in 3D CAD modeling and engineering design across a range of industries. SolidWorks has become my trusted companion, empowering me to deliver exceptional results and contribute to the success of various projects. ';
   } else if (index === 2) {
@@ -91,12 +92,38 @@ function openModal(index) {
 modal.addEventListener("click", function(event) {
   if (event.target === modal) {
     modal.close();
+    modal.classList.remove('active');
   }
 });
 
 modal.addEventListener("click", function(event) {
-  if (event.target === close) {
+  if (event.target === modal || event.target === close) {
     modal.close();
+    modal.classList.remove('active');
+    if (activeBox) {
+      activeBox.classList.remove('active');
+      activeBox = null;
+    }
   }
+});
+
+
+boxes.forEach(function(box) {
+  box.addEventListener("click", function(event) {
+    if (activeBox === box) {
+      // If the clicked box is already active, remove the active class and reset the activeBox variable
+      box.classList.remove('active');
+      activeBox = null;
+    } else {
+      // Remove active class from the previous active box (if any)
+      if (activeBox) {
+        activeBox.classList.remove('active');
+      }
+
+      // Add active class to the clicked box and update the activeBox variable
+      box.classList.add('active');
+      activeBox = box;
+    }
+  });
 });
 

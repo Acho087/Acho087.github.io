@@ -242,6 +242,12 @@ h6 {
   opacity: 0.8;
 }
 
+.box.active{  
+  box-shadow: 0px 0px 0px .2px black;
+  transform: translate(1px,1px);
+  opacity: 0.8;
+}
+
 .icon-size {
   width: 20px;
   height: 20px;
