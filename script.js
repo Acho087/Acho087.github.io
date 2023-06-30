@@ -28,7 +28,7 @@ function openModal(index) {
     content.innerHTML = 'Fusion 360 has been my go to CAD software package for home use. This is becuase it is free for home use and also having a MAC for home use (yes i have a mac because the m1 chip is just so much better than anything windows has to offer...)';
   } else if (index === 5) {
     image.src = 'images/skills/geomagic.png';
-    title.textContent = 'GeoMagic Design X';
+    title.textContent = 'Design X';
     content.innerHTML = 'Used Geomagic design X to reverse engineer scanned components to produce parametric models.......';
   } else if (index === 6) {
     image.src = 'images/skills/ansys.png';
