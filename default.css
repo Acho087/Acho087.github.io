@@ -9,6 +9,7 @@
 
   --mainText: black;
   --secondardText: white;
+  --toggle:white;
 }
 
 
@@ -24,6 +25,7 @@ body {
   margin: 0;
   background-color: var(--mainBGColor);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transition: all .4s ease;
 }
 
 h1,
@@ -79,12 +81,6 @@ h6 {
   font-size: 16px;
 }
 
-.s1 {
-  background-color: var(--mainBGColor);
-  border-bottom: 1px solid var(--borderColor);
-  overflow: auto;
-
-}
 
 .main-container {
   width: 1200px;
@@ -113,6 +109,12 @@ h6 {
   /* align-items: center; */
     
 }
+/* .toggle:hover::before{
+  background: black;
+}
+.toggle.dark:hover::before{
+  background: white;
+} */
 
 
 .toggle{
@@ -122,6 +124,7 @@ h6 {
   position: relative;
   border-radius: 20px;
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+  
 }
 
 .toggle::before{
@@ -129,25 +132,23 @@ h6 {
   position: absolute;
   height: 15px;
   width: 15px;
-  background: black;
+  background: var(--toggle);
   border-radius: 50%;
   left: 3px;
   top: 20%;
   transform: translateY(-10%);
-  transition: all 0.4s ease-in-out;
+  transition: all .4s ease;
 }
 
 .toggle.dark::before{
   left: calc(100% - 15px - 3px);
-  background-color: white;
-  
-
+  background-color: var(--toggle);
 }
 .tog2{
   color: grey;
 }
 
-.page-wrapper {
+.content-wrapper {
   background-color: var(--secondaryColor);
   border: 1px solid var(--borderColor);
   border-radius: 5px 5px 0 0;
@@ -386,17 +387,7 @@ h6 {
   margin: auto;
   display: block;
 }
-.modal-img{
-  max-width: 50px;
-  max-height: 50px;
-  object-fit: contain;
-  height: 50px;
-  width: 50px;
-  position: relative;
-  margin: auto;
-  display: block;
 
-}
 
 
 dialog {
@@ -410,7 +401,7 @@ dialog {
   left: 0px;
   /* width: 80%; */
   padding: 10px 30px 30px 30px;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(10, 10, 10, .98);
   z-index: 9999;
   border: none;
   outline: none;
@@ -440,12 +431,31 @@ dialog::backdrop {
 #modal h2,
 #modal p {
   color: #dadada;
-  /* text-align: left; */
+  text-align: left;
+  padding: 5px;
 }
 
 #modal{
   width: 90%;
   max-width: 750px;
+}
+#modalheader{
+  display: flex;
+justify-content: space-between;
+
+}
+.modal-img{
+  max-width: 50px;
+  max-height: 50px;
+  object-fit: contain;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  /* position: relative; */
+  /* margin: auto; */
+  /* display: block; */
 }
 
 #closeModal {
@@ -490,7 +500,7 @@ dialog::backdrop {
     border-right: 1px solid var(--borderColor);
     border-bottom: none;
   }
-  .page-wrapper {
+  .content-wrapper {
     grid-template-columns: 1fr 2fr;
     grid-template-areas:
       "nav-wrapper nav-wrapper"
