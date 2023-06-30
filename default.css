@@ -23,6 +23,10 @@ body {
   padding: 0;
   margin: 0;
   background-color: var(--mainBGColor);
+    -webkit-user-select: none; /* Disable selection on WebKit browsers */
+    -moz-user-select: none; /* Disable selection on Firefox */
+    -ms-user-select: none; /* Disable selection on Microsoft Edge */
+    user-select: none; /* Disable selection on other browsers */
 }
 
 h1,
@@ -54,7 +58,9 @@ button {
   color: var(--mainText);
   font-family: "Roboto Mono", monospace;
   font-size: 12px;
+
 }
+
 
 
 h1 {
