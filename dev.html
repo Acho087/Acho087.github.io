@@ -98,48 +98,26 @@
             <div class="skills">
               <h3>Skills</h3>
               <div class="skillscontainer">
-                                
-                <div class="box" id="openModal"><img class="scaled-image" src="images/skills/solidworks.png" alt=""></div>
-                <dialog id="modal">
-                  <div><img class="scaled-image" src="images/skills/solidworks.png" alt="">
-                    <div class="overlay" onclick="openModal(1)">
-                    <h2>SolidWorks</h2>
-                    <div id="closeModal">&times;</div>
-                  </div>
-                  <div class="modal-content">
-                    <p>SolidWorks is a powerful 3D computer-aided design (CAD) software widely used by engineers for designing and modeling complex mechanical and industrial systems, helping to streamline the product development process and improve engineering efficiency.</p>
-                    <p><br> With a cumulative experience of more than 4 years, I have extensively utilized SolidWorks throughout my employment at Pfizer, LEP Engineering Plastics, and MAG Assembly, demonstrating expertise in 3D CAD modeling and engineering design across various industries.</p>
-                  </div>
-                </dialog>
-
-                <div class="box" id="openModal">
-                  <img class="scaled-image" src="images/skills/PTC.png" alt=""></div>
-                <dialog id="modal">
-                  <div><img class="scaled-image" src="images/skills/PTC.png" alt="">
-                    <h2>PTC Creo</h2>
-                    <div id="closeModal">&times;</div>
-                  </div>
-                  <div class="modal-content">
-                    <p>Creo something something</p>
-                  </div>
-                </dialog>
-
-                <div class="box">2</div>
-                <div class="box">3</div>
-                <div class="box">4</div>
-                <div class="box">5</div>
-                <div class="box">6</div>
-                <div class="box">7</div>
-                <div class="box">8</div>
-                <div class="box">9</div>
-                <div class="box">10</div>
-                <div class="box">11</div>
-                <div class="box">12</div>
-                <div class="box">13</div>
-                <div class="box">14</div>
-
-                <div class="box">15</div>
-                <div class="box">16</div>
+                <div onclick="openModal(1)" class="box" id="openModal"><img class="scaled-image" src="images/skills/solidworks.png" alt=""></div>
+                <div onclick="openModal(2)" class="box" id="openModal"><img class="scaled-image" src="images/skills/PTC.png" alt=""></div>
+                <div onclick="openModal(3)" class="box" id="openModal"><img class="scaled-image" src="images/skills/inventor.png" alt=""></div>
+                <div onclick="openModal(4)" class="box" id="openModal"><img class="scaled-image" src="images/skills/fusion.png" alt=""></div>
+                <div onclick="openModal(5)" class="box" id="openModal"><img class="scaled-image" src="images/skills/geomagic.png" alt=""></div>
+                <div onclick="openModal(6)" class="box" id="openModal"><img class="scaled-image" src="images/skills/ansys.png" alt=""></div>
+                <div onclick="openModal(7)" class="box" id="openModal"><img class="scaled-image" src="images/skills/office.png" alt=""></div>
+                <div onclick="openModal(8)" class="box" id="openModal"><img class="scaled-image" src="images/skills/python.svg" alt=""></div>
+                <div onclick="openModal(9)" class="box" id="openModal"><img class="scaled-image" src="images/skills/raspberry.png" alt=""></div>
+                <div onclick="openModal(10)" class="box" id="openModal"><img class="scaled-image" src="images/skills/excel.png" alt=""></div>
+                <div onclick="openModal(11)" class="box" id="openModal"><img class="scaled-image" src="images/skills/medical.png" alt=""></div>
+                <div onclick="openModal(12)" class="box" id="openModal"><img class="scaled-image" src="images/skills/signage.png" alt=""></div>
+                <div onclick="openModal(13)" class="box" id="openModal"><img class="scaled-image" src="images/skills/report.png" alt=""></div>
+                <div onclick="openModal(14)" class="box" id="openModal"><img class="scaled-image" src="images/skills/3dprint.png" alt=""></div>
+                <div onclick="openModal(15)" class="box" id="openModal"><img class="scaled-image" src="images/skills/3dscan.svg" alt=""></div>
+                <div onclick="openModal(16)" class="box" id="openModal"><img class="scaled-image" src="images/skills/webdev.png" alt=""></div>
+                <div onclick="openModal(17)" class="box" id="openModal"><img class="scaled-image" src="images/skills/stats.png" alt=""></div>
+                <div onclick="openModal(17)" class="box" id="openModal"><img class="scaled-image" src="images/skills/instron.png" alt=""></div>
+                <!-- Add more box elements as needed -->
+               
               </div>
             </div>
 
@@ -182,7 +160,17 @@
     </div>
   </section>
 
-
+  <dialog id="modal">
+    <div>
+      <img class="scaled-image" style="margin: 0 auto;" src="" alt="">
+      <h2></h2>
+      <div id="closeModal">&times;</div>
+    </div>
+    <div id="dialog-content">
+      <h4></h4>
+      <p></p>
+    </div>
+  </dialog>
 
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
@@ -196,9 +184,10 @@
   </script>
 
   <!-- toggle -->
-
-
   <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="theme.js"></script>
+
+
 
 
 </body>

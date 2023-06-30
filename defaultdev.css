@@ -325,13 +325,12 @@ h6 {
   grid-area: portfolio;
   border-bottom: 1px solid var(--borderColor);
 }
-
 .skillscontainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height:max-content;
+  height: max-content;
   margin: 0 auto;
 }
 
@@ -345,37 +344,35 @@ h6 {
   width: 60px;
   display: flex;
   border-radius: 15px;
-  /* border: 2px solid var(--trimColor); */
   cursor: pointer;
+  
 }
-  .scaled-image {
-    max-width: 50px;
-    max-height: 50px;
-    object-fit: contain;
-    height: 50px;
-    width: 50px;
-    background-color: var(--mainBGColor);
-    border-radius: 10px;
-    margin: auto;
-    display: block;
-  }
 
+.scaled-image {
+  max-width: 50px;
+  max-height: 50px;
+  object-fit: contain;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+}
 
-.box:hover{
-    opacity: .8;
+.box:hover {
+  opacity: .8;
 }
 
 dialog {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: fixed;
   margin: auto;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   width: 80%;
-  /* height: 80%; */
   padding: 10px 30px 30px 30px;
   background-color: rgba(0, 0, 0, 1);
   z-index: 9999;
@@ -385,39 +382,29 @@ dialog {
 }
 
 dialog[open] {
-  display: absolute;
+  display: flex;
+}
+
+dialog[close] {
+  display: none;
 }
 
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 100%;
+  display: block;
 }
-
-dialog:not([open]) {
-  display: none;
-}
-
 
 .dialog-content {
-  width: 200px;
-  height: 200px;
-  background-color: var(--mainColor);
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 #modal h2,
 #modal p {
-  color: #dadada; /* Change the font color of both h2 and p to blue */
+  color: #dadada;
   text-align: center;
-  /* margin-top: 20px; */
-}
-
-
-.modal-header {
-  position: relative;
-  padding: 10px;
 }
 
 #closeModal {
@@ -440,7 +427,6 @@ dialog:not([open]) {
   color: white;
   background-color: rgba(0, 0, 0, 0.1);
 }
-
 
 
 
