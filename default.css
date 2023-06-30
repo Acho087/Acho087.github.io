@@ -152,9 +152,6 @@ h6 {
   background-color: var(--secondaryColor);
   border: 1px solid var(--borderColor);
   border-radius: 5px 5px 0 0;
-
-  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 
   display: grid;
@@ -191,8 +188,6 @@ h6 {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   margin: 5px;
 }
@@ -236,16 +231,16 @@ h6 {
   height: 40px;
   border-radius: 50%;
   cursor: pointer;
-  background-color: #0f0f0f;
+  background-color: #111111;
   margin: 5px;
-  box-shadow: 2px 2px 2px 0px black;
+  box-shadow: 1px 1px 0px 0px black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .dot-sm:hover{
   box-shadow: 0px 0px 0px 0px black;
-  transform: translate(2px,2px);
+  transform: translate(1px,1px);
 }
 
 .icon-size {
@@ -264,17 +259,17 @@ h6 {
   border: none;
   margin:25px;
   border-radius: 50px;
-  background-color: #0f0f0f;
-  color: var(--mainText);
+  background-color: #111111;
+  color: white;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
-  box-shadow: 2px 2px 2px 0px black;
+  box-shadow: 1px 1px 0px 0px black;
 }
 
 .CV:hover{
   box-shadow: 0px 0px 0px 0px black;
-  transform: translate(2px,2px);
+  transform: translate(1px,1px);
 }
 
 .main {
@@ -317,9 +312,8 @@ h6 {
 }
 
 .skills {
-  padding: 10px;
+  padding-top: 10px;
   grid-area: skills;
-
   align-items: center;
 }
 
@@ -374,11 +368,11 @@ h6 {
   display: flex;
   border-radius: 15px;
   cursor: pointer;
-  box-shadow: 2px 2px 2px 0px black;
+  box-shadow: 2px 2px 0px 0px black;
 }
 
 .box:hover{
-  box-shadow: 0px 0px 0px 0px black;
+  box-shadow: 0px 0px 0px .2px black;
   transform: translate(2px, 2px);
 }
 
