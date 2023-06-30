@@ -217,8 +217,8 @@ h6 {
 #profile-pic {
   display: block;
   margin: 0 auto;
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
   object-fit: cover;
   border: 5px solid var( --trimColor);
   border-radius: 50% !important;
@@ -272,13 +272,13 @@ h6 {
   grid-area: main;
   display: grid;
   /* grid-template-rows: 3em 20em auto; */
-  grid-template-columns: 7fr 1fr;
+  grid-template-columns: 7fr 0fr;
   grid-template-areas: "grid1 grid2";
 }
 
 .portfolioBlock{
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   background-color: var(--borderColor);
   margin: 0 auto;
 
@@ -458,9 +458,9 @@ dialog::backdrop {
   }
 }
 
-@media screen and (min-width: 400px) {
+/* @media screen and (min-width: 400px) {
   .box {
-    /* height: 70px;
-    width: 70px; */
-  }
-}
+    height: 70px;
+    width: 70px;
+  } 
+} */

@@ -25,62 +25,62 @@ function openModal(index) {
   } else if (index === 4) {
     image.src = 'images/skills/fusion.png';
     title.textContent = 'Fusion 360';
-    content.innerHTML = 'Creo something something...';
+    content.innerHTML = 'Fusion 360 has been my go to CAD software package for home use. This is becuase it is free for home use and also having a MAC for home use (yes i have a mac because the m1 chip is just so much better than anything windows has to offer...)';
   } else if (index === 5) {
     image.src = 'images/skills/geomagic.png';
-    title.textContent = 'GeoMagic Design';
-    content.innerHTML = 'Creo something something...';
+    title.textContent = 'GeoMagic Design X';
+    content.innerHTML = 'Used Geomagic design X to reverse engineer scanned components to produce parametric models.......';
   } else if (index === 6) {
     image.src = 'images/skills/ansys.png';
     title.textContent = 'ANSYS';
-    content.innerHTML = 'Creo something something...';
+    content.innerHTML = 'Using Ansys at university, trainined in Insstran and have used Solidworks Static FEA';
   } else if (index === 7) {
-    image.src = 'images/skills/office.png';
-    title.textContent = 'MS Suite';
-    content.innerHTML = 'Creo something something...';
+    image.src = 'images/skills/webdev.png';
+    title.textContent = 'Webdev';
+    content.innerHTML = 'soemthing about apps and the softwaare i know. HTML CSS JS . this website is programmed entired by myself and all self taught';
   } else if (index === 8) {
     image.src = 'images/skills/python.svg';
     title.textContent = 'Python';
-    content.innerHTML = 'Creo something something...';
+    content.innerHTML = 'Used Python and Micro Python. Projects included development of a webapp which allows the users to control a LED to have a competition in red vs blue counts. uPython on testing devices. Python for data analysis and calculations.';
   } else if (index === 9) {
     image.src = 'images/skills/raspberry.png';
     title.textContent = 'Electronics';
-    content.innerHTML = 'Creo something something...';
+    content.innerHTML = 'worked on electronics projects both in work at pfizer and personal. ';
   } else if (index === 10) {
     image.src = 'images/skills/excel.png';
     title.textContent = 'Excel';
-    content.innerHTML = 'Creo something something...';
+    content.innerHTML = 'Monte carlo simulations for plunger positions, dose delivery, battery life expectancies etc';
   } else if (index === 11) {
-    image.src = 'images/skills/medical.png';
-    title.textContent = 'Medical Devices';
-    content.innerHTML = 'Creo something something...';
+    image.src = 'images/skills/instron.png';
+    title.textContent = 'Testing and verifications';
+    content.innerHTML = 'testing and verifications and designined of jibs, fixtures for design verification testing. Includes things with sensors.';
   } else if (index === 12) {
-    image.src = 'images/skills/signage.png';
-    title.textContent = 'Signage';
-    content.innerHTML = 'Creo something something...';
+    image.src = 'images/skills/stats.png';
+    title.textContent = 'Statistical Analysis';
+    content.innerHTML = 'Analysis of data sets to make informaed decisions and trends. used pythong scripts, excel to do something still patient kin info';
   } else if (index === 13) {
       image.src = 'images/skills/report.png';
       title.textContent = 'Reports, Manuals, SOPs';
-      content.innerHTML = 'Creo something something...';
+      content.innerHTML = 'talk about what was required at pfizer doing reports, Signage engineering manual for signage design before i left and SOPs for processes at pfizer and setting up templates for previous roles for quoting and job/print organization.';
   } else if (index === 14) {
     image.src = 'images/skills/3dprint.png';
     title.textContent = '3D Printing';
-    content.innerHTML = 'Creo something something...';
+    content.innerHTML = 'have worked for 2? years in 3d printing as the production manager. expert in 3d printing. have built FDM machines, worked with SLA and SLS machines';
   } else if (index === 15) {
     image.src = 'images/skills/3dscan.svg';
     title.textContent = '3D Scanning';
-    content.innerHTML = 'Creo something something...';
+    content.innerHTML = 'used 3D scanning to reverse engineer components at LEP Engineering platics. utalized Geomagic Design X to turn STL/point cloud files into working paratetric files';
   } else if (index === 16) {
-    image.src = 'images/skills/webdev.png';
-    title.textContent = 'WebDev';
-    content.innerHTML = 'Creo something something...';
+    image.src = 'images/skills/office.png';
+    title.textContent = 'office';
+    content.innerHTML = 'have been bought up on the windows eco system and very familiar with the MS suite including ';
   } else if (index === 17) {
-    image.src = 'images/skills/stats.png';
-    title.textContent = 'PDM Systems Vault and DDM';
-    content.innerHTML = 'Creo something something...';
+    image.src = 'images/skills/medical.png';
+    title.textContent = 'Excel';
+    content.innerHTML = 'Proficcient in using MS excel. this include advance user experience with VB code.';
   } else if (index === 18) {
-    image.src = 'images/skills/instron.png';
-    title.textContent = 'PDM Systems Vault and DDM';
+    image.src = 'images/skills/signage.png';
+    title.textContent = 'Testing devices and Forces machines';
     content.innerHTML = 'Creo something something...';
 }
   modal.showModal()
