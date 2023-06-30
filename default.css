@@ -450,11 +450,11 @@ dialog::backdrop {
 
 #closeModal {
   position: absolute;
-  top: 15px;
-  right: 15px;
-  transform: translate(50%, -50%);
-  width: 30px;
-  height: 30px;
+  bottom: 30px;
+  right: 16px;
+  /* transform: translate(50%, -50%); */
+  width: 10px;
+  height: 10px;
   font-size: 20px;
   background: none;
   border: none;
