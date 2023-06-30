@@ -28,6 +28,10 @@ body {
     -ms-user-select: none; /* Disable selection on Microsoft Edge */
     user-select: none; /* Disable selection on other browsers */
 }
+div:focus,
+img:focus {
+    outline: none;
+}
 
 h1,
 h2,
