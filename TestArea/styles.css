@@ -9,6 +9,11 @@
   width: 70px;
   height: 70px;
   margin: 10px;
+  box-shadow: 2px 2px 2px 0px black;
+}
+
+.box:hover{
+  /* box-shadow: ; */
 }
 
 .box img {
