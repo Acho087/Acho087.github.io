@@ -78,6 +78,7 @@ h6 {
   background-color: var(--mainBGColor);
   /* border-bottom: 1px solid var(--borderColor); */
   overflow: auto;
+
 }
 
 /* .s2 {
@@ -276,13 +277,7 @@ h6 {
   grid-template-areas: "grid1 grid2";
 }
 
-.portfolioBlock{
-  height: 300px;
-  width: 300px;
-  background-color: var(--borderColor);
-  margin: 0 auto;
 
-}
 
 .appcontainer {
   grid-area: grid2;
@@ -325,6 +320,32 @@ h6 {
   grid-area: portfolio;
   border-bottom: 1px solid var(--borderColor);
 }
+
+.portfoliocontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolioBlock{
+  height: 250px;
+  width: 400px;
+  background-color: var(--borderColor);
+
+
+}
+
+.arrow {
+  width: 20px;
+  height: 250px;
+  background-color: gray;
+  margin: 0 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Add this line */
+
+}
+
 .skillscontainer {
   display: flex;
   flex-wrap: wrap;
