@@ -9,6 +9,7 @@
   --secondardText: red;
 }
 
+
 * {
   padding: 0;
   margin: 0;
@@ -35,7 +36,11 @@ strong {
   text-align: center;
 }
 
+h3{
+  margin-bottom: 20px;
+}
 
+a,
 p,
 div,
 li,
@@ -49,10 +54,6 @@ button {
   font-size: 12px;
 }
 
-a {
-  text-decoration: none;
-  color: #171717;
-}
 
 h1 {
   font-size: 40px;
@@ -77,6 +78,7 @@ h6 {
   background-color: var(--mainBGColor);
   /* border-bottom: 1px solid var(--borderColor); */
   overflow: auto;
+
 }
 
 /* .s2 {
@@ -94,23 +96,54 @@ h6 {
   display: grid;
   text-align: center;
   align-content: center;
-  min-height: 10em;
+  min-height: 9em;
 }
 .auto-type{
   font-size:small;
+  height: 10px;
 }
 
 .toggles{
-  justify-content: space-between;
+  justify-content:flex-end;
   grid-area: toggles;
   display: flex;
+  position:absolute;
+  top: 10px;
+  right: 10px;
+  /* height: 30px; */
+  /* align-items: center; */
     
 }
 
-.tog1{
-  color: #2f4f4f;
+
+.toggle{
+  height: 20px;
+  width: 40px;
+  background-color: grey;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 }
 
+.toggle::before{
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background: var(--secondaryColor);
+  border-radius: 50%;
+  left: 3px;
+  top: 20%;
+  transform: translateY(-10%);
+  transition: all 0.4s ease-in-out;
+}
+
+.toggle.dark::before{
+  left: calc(100% - 15px - 3px);
+  background-color: black;
+  
+
+}
 .tog2{
   color: grey;
 }
@@ -118,7 +151,7 @@ h6 {
 .intro-wrapper {
   background-color: var(--secondaryColor);
   border: 1px solid var(--borderColor);
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
 
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
@@ -174,18 +207,19 @@ h6 {
 }
 
 .about {
+  border-bottom: 1px solid var(--borderColor);
   border-right: none;
   grid-area: about;
   text-align: center;
-  padding: 20px 20px 55px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
 #profile-pic {
   display: block;
   margin: 0 auto;
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
   object-fit: cover;
   border: 5px solid var( --trimColor);
   border-radius: 50% !important;
@@ -218,14 +252,15 @@ h6 {
 }
 
 .aboutme {
-  padding: 0px 25px 50px 25px;
-  text-align: justify;
+  padding: 20px 25px;
+  text-align: center;
 }
 
 .CV {
   display: inline-block;
   padding: 15px 20px;
   border: none;
+  margin:25px;
   border-radius: 50px;
   background-color: black;
   color: #fff;
@@ -238,14 +273,16 @@ h6 {
   grid-area: main;
   display: grid;
   /* grid-template-rows: 3em 20em auto; */
-  grid-template-columns: 7fr 1fr;
+  grid-template-columns: 7fr 0fr;
   grid-template-areas: "grid1 grid2";
 }
 
+
+
 .appcontainer {
-  border: 1px dashed blue;
   grid-area: grid2;
   text-align: center;
+  border-left: 1px solid var(--borderColor);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -253,7 +290,7 @@ h6 {
 }
 
 .app {
-  background-color: grey;
+  background-color: var(--mainColor);
   border: 1px #63c258;
   margin: 10px;
   height: 50px;
@@ -261,45 +298,158 @@ h6 {
   align-items: center;
   justify-content: center;
   display: flex;
+  border-radius: 15px;
 }
 
 .grid1 {
   grid-area: grid1;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "skills" "portfolio";
+  grid-template-areas: "portfolio" "skills"; 
 }
 
 .skills {
   padding: 10px;
   grid-area: skills;
-  border-bottom: 1px solid black;
+
   align-items: center;
 }
 
 .portfolio {
   padding: 20px;
   grid-area: portfolio;
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.portfoliocontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolioBlock{
+  height: 250px;
+  width: 250px;
+  background-color: var(--borderColor);
+
+
+}
+
+.arrow {
+  width: 20px;
+  height: 250px;
+  background-color: gray;
+  margin: 0 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Add this line */
+
 }
 
 .skillscontainer {
-    border: 1px dashed red;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  height: max-content;
+  margin: 0 auto;
 }
 
 .box {
   justify-content: center;
   align-items: center;
-  background-color: blue;
+  background-color: var(--mainColor);
   text-align: center;
   margin: 5px;
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  border-radius: 15px;
+  cursor: pointer;
+  
+}
 
+.scaled-image {
+  max-width: 50px;
+  max-height: 50px;
+  object-fit: contain;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+}
+
+.box:hover {
+  opacity: .8;
+}
+
+dialog {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  margin: auto;
+  top: 0px;
+  left: 0px;
+  width: 80%;
+  padding: 10px 30px 30px 30px;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 9999;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+dialog[open] {
   display: flex;
 }
+
+dialog[close] {
+  display: none;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.dialog-content {
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#modal h2,
+#modal p {
+  color: #dadada;
+  text-align: center;
+}
+
+#closeModal {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transform: translate(50%, -50%);
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 30px;
+}
+
+#closeModal:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
 
 .bottom {
   padding: 10px;
@@ -313,9 +463,25 @@ h6 {
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
+  .about {
+    border-right: 1px solid var(--borderColor);
+  }
+  .intro-wrapper {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "nav-wrapper nav-wrapper"
+      "about main";
+  }
   .box {
     height: 70px;
     width: 70px;
   }
 }
+
+/* @media screen and (min-width: 400px) {
+  .box {
+    height: 70px;
+    width: 70px;
+  } 
+} */

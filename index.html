@@ -44,19 +44,20 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMXN62L"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-
   <section class="s1">
+
     <div class="main-container">
+      <a class="toggles">Toggle me -> &nbsp;
+        <div class="toggle"></div>
+      </a>
       <div class="greeting-wrapper">
-        <h1>Hi, I'm Adam Cho</h1>
+
+        <h1>Hi, I'm Adam</h1>
         <div>
           <span class="auto-type"></span>
         </div>
       </div>
-<div class="toggles">
-  <!-- <div class="tog1">*darkmode toggle*</div> -->
-  <!-- <div  class="tog2">*windows toggle*</div> -->
-</div>
+
       <div class="intro-wrapper">
         <div class="nav-wrapper">
           <div class="dots-wrapper">
@@ -83,7 +84,7 @@
               About Me
             </h5>
             <p style=" margin: 0 auto; max-width: 500px;">
-              Kia ora! I'm a skilled Mechanical Design Engineer with a flair for software and electronics, currently situated in the UK. I thrive in dynamic environments, utilizing my diverse knowledge to achieve significant outcomes. I enjoy traveling, engaging in sports, and have a genuine passion for continuous learning. I bring an innovative dynamic approach to all my endeavours. </p>
+              Kia ora! Welcome to my website, I coded this myself with a little help from the internet :). <br> <br>I'm a skilled Mechanical Design Engineer with a flair for software and electronics, currently situated in the UK. I thrive in dynamic environments, utilizing my diverse knowledge to achieve significant outcomes. I enjoy traveling, engaging in sports, and have a genuine passion for continuous learning. I bring an innovative dynamic approach to all my endeavors. </p>
           </div>
 
 
@@ -92,18 +93,87 @@
 
 
         </section>
+        <div class="main">
+          <div class="grid1">
+            <div class="skills">
+              <h3>Skills</h3>
+              <div class="skillscontainer">
+                <div onclick="openModal(1)" class="box" id="openModal"><img class="scaled-image" src="images/skills/solidworks.png" alt=""></div>
+                <div onclick="openModal(2)" class="box" id="openModal"><img class="scaled-image" src="images/skills/PTC.png" alt=""></div>
+                <div onclick="openModal(3)" class="box" id="openModal"><img class="scaled-image" src="images/skills/inventor.png" alt=""></div>
+                <div onclick="openModal(4)" class="box" id="openModal"><img class="scaled-image" src="images/skills/fusion.png" alt=""></div>
+                <div onclick="openModal(5)" class="box" id="openModal"><img class="scaled-image" src="images/skills/geomagic.png" alt=""></div>
+                <div onclick="openModal(6)" class="box" id="openModal"><img class="scaled-image" src="images/skills/ansys.png" alt=""></div>
+                <div onclick="openModal(7)" class="box" id="openModal"><img class="scaled-image" src="images/skills/webdev.png" alt=""></div>
+                <div onclick="openModal(8)" class="box" id="openModal"><img class="scaled-image" src="images/skills/python.svg" alt=""></div>
+                <div onclick="openModal(9)" class="box" id="openModal"><img class="scaled-image" src="images/skills/raspberry.png" alt=""></div>
+                <div onclick="openModal(10)" class="box" id="openModal"><img class="scaled-image" src="images/skills/excel.png" alt=""></div>
+                <div onclick="openModal(11)" class="box" id="openModal"><img class="scaled-image" src="images/skills/instron.png" alt=""></div>
+                <div onclick="openModal(12)" class="box" id="openModal"><img class="scaled-image" src="images/skills/stats.png" alt=""></div>
+                <div onclick="openModal(13)" class="box" id="openModal"><img class="scaled-image" src="images/skills/report.png" alt=""></div>
+                <div onclick="openModal(14)" class="box" id="openModal"><img class="scaled-image" src="images/skills/3dprint.png" alt=""></div>
+                <div onclick="openModal(15)" class="box" id="openModal"><img class="scaled-image" src="images/skills/3dscan.svg" alt=""></div>
+                <div onclick="openModal(16)" class="box" id="openModal"><img class="scaled-image" src="images/skills/office.png" alt=""></div>
+                <div onclick="openModal(17)" class="box" id="openModal"><img class="scaled-image" src="images/skills/medical.png" alt=""></div>
+                <div onclick="openModal(17)" class="box" id="openModal"><img class="scaled-image" src="images/skills/signage.png" alt=""></div>
+                <!-- Add more box elements as needed -->
+               
+              </div>
+            </div>
 
-  </section>
 
-  <section class="bottom">
-    <div class="main-container">
-       <a style="color: red;"> Currently in Contruction! </a><a href="./dev.html" style="font-style: italic; color: grey;">(more features coming soon!) </a><br>
-       This will act as a hub for myself and also to those who want to know info about
-       me.
+            <div class="portfolio">
+              <h3>Portfolio</h3>
+<div class="portfoliocontainer">
+              <div class="arrow"><</div>
+
+              <div class="portfolioBlock"> </div>
+              <div class="arrow">></div></div>
+
+            </div>
+
+
+          </div>
+
+
+
+          <!-- <div class="appcontainer">
+            <h4>APPS</h4>
+            <div id="1" class="app">App1</div>
+            <div id="2" class="app">App2</div>
+            <div id="3" class="app">App3</div>
+            <div id="4" class="app">App4</div>
+            <div id="5" class="app">App5</div>
+          </div> -->
+
+        </div>
+
+      </div>
+
     </div>
+
+    <section class="bottom">
+      <a style="color: red;"> Currently in Contruction! </a><a style="font-style: italic; color: grey;">(more features coming soon!) </a><br>
+      
+      <a> This will act as a hub for myself and also to those who want to know info about
+      me </a>
+      </div>
+    </section>
   </section>
 
 
+
+  <dialog id="modal">
+    <div>
+      <img class="scaled-image" style="margin: 0 auto;" src="" alt="">
+      <h2></h2>
+      <div id="closeModal">&times;</div>
+    </div>
+    <div id="dialog-content">
+      <h4></h4>
+      <p></p>
+    </div>
+  </dialog>
 
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
@@ -116,7 +186,13 @@
     })
   </script>
 
+  <!-- toggle -->
   <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="theme.js"></script>
+
+
+
+
 </body>
 
 </html>
