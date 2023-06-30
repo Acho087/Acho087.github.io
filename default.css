@@ -242,13 +242,13 @@ h6 {
 .arrow:hover{
   box-shadow: 0px 0px 0px .2px black;
   transform: translate(1px,1px);
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .box.active{  
   box-shadow: 0px 0px 0px .2px black;
   transform: translate(1px,1px);
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .icon-size {
